@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fund Me App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div >
+        <h1>Fund Me App</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href = "#about" >Sobre o App</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+      
+    </header>
+    <div class="container" >
+      <button id="connectButton">Connect</button>
+      <button id="balanceButton">getBalance</button>
+      <button id="withdrawButton">Withdraw</button>
+      <!-- <form> -->
+      <label for="ethAmount">ETH Amount</label>
+      <input id="ethAmount" placeholder="0.1" />
+      <button type="button" id="fundButton" > Fund </button>
+      <!-- </form> -->
+    </div>
+    <section>
+      <div class="container">
+          <div>
+              <h2>Sobre o App</h2>
+              <p>
+                  * Foi criado um frontend básico com o propósito de facilitar a interação com o SmartContact FundMe, cujo deploy foi feito na testnet Sepolia. Esse frontend utiliza informações essenciais, como o endereço do contrato, o ABI (Interface de Aplicação Binária) para interagir com as funções do contrato e um nó que se conecta à Metamask para garantir uma integração suave com a carteira dos usuários.              
+              </p>
+              <p>
+                * A integração com a Metamask no frontend do SmartContact FundMe permite aos usuários conectarem suas carteiras Ethereum de forma segura ao aplicativo. Ao clicar para realizar ações, como contribuir para campanhas, a Metamask solicita permissões e exibe detalhes das transações, que os usuários devem assinar com suas chaves privadas. A Metamask encaminha as transações para a rede Ethereum, onde o contrato inteligente do FundMe as processa. O feedback é então exibido no frontend, facilitando a interação dos usuários com o contrato inteligente, garantindo segurança e controle sobre as transações. Isso torna a Metamask uma peça crucial na experiência de usuário para aplicativos baseados em Ethereum.
+              </p>
+          </div>
+      </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Contato</h2>
+        <div id="contact">
+            <img id="github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png" alt="">
+            <p>
+              github.com/GabrielFilipedeOliveira
+            </p>
+        </div>
+    </div>
+</section>
+
+
+  </body>
+
+  <script src="./index.js" type="module"></script>
+</html>
